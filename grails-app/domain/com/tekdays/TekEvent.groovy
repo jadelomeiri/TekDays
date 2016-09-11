@@ -4,11 +4,22 @@ class TekEvent {
 
 	String city
 	String name
-	String organizer
+	TekUser organizer
 	String venue
 	Date startDate
 	Date endDate
 	String description
+	//TekUser volunteers
+	//String respondents
+	//Sponsorship sponsorships
+	//Task tasks
+	//TekMessage messages 
+	
+	static hasMany = [volunteers: TekUser,
+						respondents: String,
+						sponsorships: Sponsorship,
+						tasks: Task,
+						messages: TekMessage]
 	
 	static constraints = {
 		name()
@@ -18,6 +29,11 @@ class TekEvent {
 		venue()
 		startDate()
 		endDate()
+		volunteers nullable: true
+		respondents nullable: true
+		sponsorships nullable: true
+		tasks nullable: true
+		messages nullable: true
 	}
 	
 	String toString() {

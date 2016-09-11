@@ -19,7 +19,9 @@ class TekEventSpec extends Specification {
 
     void "test toString"() {
 		when: "a tekEvent has a name and a city"
-			def tekEvent = new TekEvent(name:'Groovy One', city:'London', organizer:'John Doe')
+			def tekEvent = new TekEvent(name:'Groovy One',
+										city:'London',
+										organizer: [fullName: 'John Doe'] as TekUser)
 		then: "the toString method will combine them"
 			tekEvent.toString() == 'Groovy One, London'
     }

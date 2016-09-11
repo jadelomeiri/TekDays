@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="Lenovo-PC" id="0" name="TekEventSpec" package="com.tekdays" tests="1" time="4.574" timestamp="2016-09-11T16:47:56">
+  <testsuite errors="0" failures="0" hostname="Lenovo-PC" id="0" name="TekEventSpec" package="com.tekdays" tests="1" time="6.587" timestamp="2016-09-11T18:37:38">
       <properties />
 
-      <testcase classname="com.tekdays.TekEventSpec" name="test toString" time="4.426" />
+      <testcase classname="com.tekdays.TekEventSpec" name="test toString" time="6.475" />
 
       <system-out><![CDATA[--Output from test toString--
 ]]></system-out>
