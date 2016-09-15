@@ -1,0 +1,29 @@
+Testsuite: com.tekdays.TaskServiceIntegrationSpec
+Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 0.835 sec
+------------- Standard Output ---------------
+--Output from test addDefaultTasks--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test addDefaultTasks--
+------------- ---------------- ---------------
+
+Testcase: test addDefaultTasks took 0.772 sec
+	FAILED
+Condition not satisfied:
+
+e.tasks.size() == 7
+| |     |      |
+| |     6      false
+| [com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved)]
+Test Event, TestCity, USA
+
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+e.tasks.size() == 7
+| |     |      |
+| |     6      false
+| [com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved)]
+Test Event, TestCity, USA
+
+	at com.tekdays.TaskServiceIntegrationSpec.test addDefaultTasks(TaskServiceIntegrationSpec.groovy:29)
+

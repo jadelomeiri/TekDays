@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="Lenovo-PC" id="0" name="TekEventSpec" package="com.tekdays" tests="1" time="6.587" timestamp="2016-09-11T18:37:38">
+  <testsuite errors="0" failures="1" hostname="Lenovo-PC" id="0" name="TaskServiceIntegrationSpec" package="com.tekdays" tests="1" time="0.835" timestamp="2016-09-15T22:27:32">
       <properties />
 
-      <testcase classname="com.tekdays.TekEventSpec" name="test toString" time="6.475" />
+      <testcase classname="com.tekdays.TaskServiceIntegrationSpec" name="test addDefaultTasks" time="0.833">
+          <failure message="Condition not satisfied:&#xa;&#xa;e.tasks.size() == 7&#xa;| |     |      |&#xa;| |     6      false&#xa;| [com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved)]&#xa;Test Event, TestCity, USA&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Condition not satisfied:
 
-      <system-out><![CDATA[--Output from test toString--
+e.tasks.size() == 7
+| |     |      |
+| |     6      false
+| [com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved), com.tekdays.Task : (unsaved)]
+Test Event, TestCity, USA
+
+	at com.tekdays.TaskServiceIntegrationSpec.test addDefaultTasks(TaskServiceIntegrationSpec.groovy:29)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from test addDefaultTasks--
 ]]></system-out>
 
-      <system-err><![CDATA[--Output from test toString--
+      <system-err><![CDATA[--Output from test addDefaultTasks--
 ]]></system-err>
 
   </testsuite>
