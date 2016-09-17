@@ -17,7 +17,12 @@
 		<g:layoutHead/>
 	</head>
 	<body>
-		<div id="logo" role="banner"><a href="${createLink(uri: '/')}"><asset:image src="td_logo.jpg" alt="TekDays"/></a></div>
+		<div id="logo" role="banner">
+			<a href="${createLink(uri: '/')}">
+				<asset:image src="td_logo.jpg" alt="TekDays"/>
+			</a>
+			<g:loginToggle />
+		</div>
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
