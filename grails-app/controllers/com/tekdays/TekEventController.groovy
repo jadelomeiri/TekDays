@@ -103,4 +103,11 @@ class TekEventController {
             '*'{ render status: NOT_FOUND }
         }
     }
+	
+	def search = {
+		if(params.query){
+			def events = TekEvent.search(params.query).results
+			[events : events]
+		}
+	}
 }

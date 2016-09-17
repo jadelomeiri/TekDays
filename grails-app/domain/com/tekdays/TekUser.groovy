@@ -9,6 +9,8 @@ class TekUser {
 	String wesbite
 	String bio
 	
+	static searchable = true
+	
     static constraints = {
 		fullName()
 		userName()

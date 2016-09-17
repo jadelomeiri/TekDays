@@ -13,7 +13,12 @@ class TekEvent {
 	//String respondents
 	//Sponsorship sponsorships
 	//Task tasks
-	//TekMessage messages 
+	//TekMessage messages
+	
+	static searchable = {
+		organizer component: true
+		volunteers component: true
+	}
 	
 	static hasMany = [volunteers: TekUser,
 						respondents: String,
