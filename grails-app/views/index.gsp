@@ -14,6 +14,7 @@
 		of greater geekdom!</p>
 	</div>
 	
+<<<<<<< HEAD
 	<div id="homeSearch">
 		<g:form controller="tekEvent" action="search">
 			<label>Search:</label>
@@ -26,6 +27,8 @@
 	
 	<g:volunteerEvents />
 	
+=======
+>>>>>>> d898b22c23835e9a2f6c835002067b8736fd5b88
 	<div class="homeCell">
 		<h3>Find a Tek Event</h3>
 		<p> See if there's a technical event in the works that strikes your

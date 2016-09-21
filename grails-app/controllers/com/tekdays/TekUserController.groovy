@@ -116,7 +116,11 @@ class TekUserController {
 			if (params.cName)
 				redirect controller:params.cName, action:params.aName
 			else
+<<<<<<< HEAD
 				redirect(uri:'/')
+=======
+				redirect controller:'tekEvent', action:'index'
+>>>>>>> d898b22c23835e9a2f6c835002067b8736fd5b88
 		} else{
 			flash.message = "Invalid username and password."
 			render view:'login'
