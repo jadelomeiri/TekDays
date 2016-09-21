@@ -36,7 +36,6 @@ class TekDaysTagLib {
 		}
 		out << "</div><br/>"
 	}
-<<<<<<< HEAD
 	
 	def organizerEvents = {
 		if (request.getSession(false) && session.user){
@@ -78,7 +77,5 @@ class TekDaysTagLib {
 		}
 	}
 	
-	
-=======
->>>>>>> d898b22c23835e9a2f6c835002067b8736fd5b88
+
 }
